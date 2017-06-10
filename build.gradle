@@ -1,0 +1,20 @@
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+defaultTasks 'test'
+
+sourceSets {
+    test {
+        java {
+            srcDir 'tests/cryptocurrency-course-materials/assignment1/test'
+        }
+    }
+}
